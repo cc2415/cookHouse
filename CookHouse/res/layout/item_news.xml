@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.infzm.slidingmenu.demo.view.ChiViewpager
+            android:id="@+id/vp_item_news"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <com.infzm.slidingmenu.demo.view.MylistViewAddFoot
+            android:id="@+id/lv_item_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载更多"
+            android:textColor="#99000000"
+            android:textSize="24sp"
+            android:background="#e9e7ef"
+            android:padding="3dp"
+            android:id="@+id/tv_item_news_addmore"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="210dp"
+    android:background="#13000000"
+    android:layout_height="match_parent" 
+    android:layout_marginRight="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_item_recipes_gv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="200dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/iv_item_recipes_gv"
+        android:layout_marginTop="-50dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_item_recipes_foodtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_back"
+        android:layout_marginTop="-45dp"
+        android:layout_marginLeft="5dp"
+        android:text="材料："
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_recipes_food"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_back"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-45dp"
+        android:layout_toRightOf="@+id/tv_item_recipes_foodtitle"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="鸡胸肉,花生米,干红辣椒,花椒"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_recipes_counttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_item_recipes_food"
+        android:layout_marginLeft="5dp"
+        android:text="浏览数："
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_item_recipes_count"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_item_recipes_food"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_item_recipes_counttitle"
+        android:text="22222"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

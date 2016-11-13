@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/biz_news_local_weather_bg_big"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" 
+        android:paddingTop="10dp">
+
+        <com.infzm.slidingmenu.demo.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wwj_748"
+            app:border_color="#FFffffff"
+            app:border_width="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_image"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:text="IT_xiao小巫"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_classify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        />
+	
+</LinearLayout>

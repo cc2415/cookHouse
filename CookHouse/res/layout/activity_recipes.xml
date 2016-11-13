@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.infzm.slidingmenu.demo.view.mScrollview
+        android:id="@+id/sv_detailRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/vp_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/vp_img"
+                android:layout_marginTop="-50dp"
+                android:background="#44000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="牛油我党"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_recipes_decription"
+                style="@style/Detail_recipes_message"
+                android:layout_below="@id/tv_detail_name"
+                android:layout_marginTop="15dp"
+                android:text="介四川人那泼辣豪情、顽强的与磨难做斗争的精神，深深印在我们每一个人的心房，而每一个中国人都拥有中华民族热血澎湃的热情和浓浓的爱心支援" />
+
+            <TextView
+                android:id="@+id/tv_recipes_title_food"
+                style="@style/Detail_recipes_label"
+                android:layout_below="@id/tv_recipes_decription"
+                android:text="食材" />
+
+            <TextView
+                android:id="@+id/tv_recipes_food"
+                style="@style/Detail_recipes_message"
+                android:layout_below="@id/tv_recipes_title_food"
+                android:text="面粉,杞枣粉,酵母,蛋液,牛奶,黄油" />
+
+            <TextView
+                android:id="@+id/tv_recipes_title_doit"
+                style="@style/Detail_recipes_label"
+                android:layout_below="@id/tv_recipes_food"
+                android:layout_marginTop="15dp"
+                android:text="详情" />
+
+            <TextView
+                android:id="@+id/tv_recipes_doit"
+                style="@style/Detail_recipes_message"
+                android:layout_below="@id/tv_recipes_title_doit"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_recipes_other"
+                style="@style/Detail_recipes_label"
+                android:layout_below="@id/tv_recipes_doit"
+                android:drawingCacheQuality="high"
+                android:text="相关菜式" />
+
+            <com.infzm.slidingmenu.demo.view.HorizontalListView
+                android:id="@+id/lv_horizaonla"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/tv_recipes_other" />
+        </RelativeLayout>
+    </com.infzm.slidingmenu.demo.view.mScrollview>
+
+    <TextView
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:alpha="0.17"
+        android:background="#fff" />
+
+    <ImageView
+        android:id="@+id/iv_detail_recipes_classify"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/classify" />
+
+    <EditText
+        android:id="@+id/tv_detail_recipes_sou"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/iv_detail_recipes_classify" />
+
+    <ImageView
+        android:id="@+id/iv_detail_recipes_notifiction"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_detail_recipes_sou"
+        android:src="@drawable/home" />
+
+</RelativeLayout>

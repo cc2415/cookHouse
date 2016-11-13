@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_newslist"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_newslist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_newslist"
+        android:maxLines="2"
+        android:text="这是个大新闻，很大很大的新闻标题啊啊啊啊啊啊,这得视的很快的flak觉得" />
+
+    <TextView
+        android:id="@+id/tv_newslist__"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_newslist_title"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:text="阅读"
+        android:textColor="#99000000" />
+
+    <TextView
+        android:id="@+id/tv_newslist_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_newslist_title"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@id/tv_newslist__"
+        android:text="222222"
+        android:textColor="#99000000" />
+
+</RelativeLayout>
